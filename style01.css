@@ -11,12 +11,11 @@ body{
     background-color: aqua;
 }
 .main{
-    width: 360px;
+    width: 980px;
     background: #FFFFFF;
 }
 p{
     font-family:'筑紫A丸ゴシック ボールド';
-    letter-spacing: 0.2em;
 }
 
 
@@ -31,7 +30,8 @@ p{
 
 
 .tag02{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .tag03{
@@ -59,7 +59,7 @@ p{
     background-size: 100%;
 }
 .test01{
-    width: 335px;
+    width: 940px;
     background: #FEFEFE;
     padding: 0;
     margin: 1px auto;
@@ -69,40 +69,39 @@ p{
 }
 
 .tag10{
-    font-size: 13px;
+    font-size: 30px;
     text-align: center;
     color: #EA6481;
-}
-.tag11{
-    font-size: 8px;
-    letter-spacing: 0.05em;
+    line-height: 50px;
 }
 .tag12{
+    font-size: 30px;
     color:#D26DA4; 
     border-bottom: solid 1.5px #D26DA4;
     display: inline-block;
-    padding: 0 3px;
+    line-height: 50px;
 }
 .tag13{
     margin-top: 5px;
     text-align: center;
 }
 .tag14{
-    margin: -1px 20px;
+    margin: 15px 20px;
     float: left;
 }
 .tag15{
-    font-size: 15px;
+    font-size: 40px;
     text-align: center;
     color: #EA6481;
     display: inline-block;
-    margin-left: 2px;
+    margin-left: 50px;
+    margin-top: 0px;
 }
 .tag16{
     text-align: center;
 }
 .tag17{
-    font-size: 10px;
+    font-size: 30px;
     text-align: center;
 }
 #id02{
@@ -114,11 +113,11 @@ p{
 }
 
 .tag18{
-    font-size: 15px;
+    font-size: 40px;
     text-align: center;
     color: #EA6481;
     display: inline-block;
-    margin-left: -5px;
+    margin-left: 90px;
 }
 
 #id04{
@@ -137,13 +136,15 @@ p{
     
 }
 .tag20{
-    font-size: 9px;
+    font-size: 30px;
     display: inline-block;
     float: left;
-    margin-top: 80px;
-    margin-right: -8px;
-    line-height: 13px;
-    
+    margin-top: 160px;
+    margin-left: -138px;
+    line-height:50px;  
+}
+.tag2-01{
+    margin-left: -30px;
 }
 .tag21{
     margin-left: 25px;
@@ -159,18 +160,19 @@ p{
     box-shadow: 0px 0px 3px 0.1px;
 }
 .tag23{
-    font-size: 15px;
+    font-size: 40px;
     text-align: center;
     color: #EA6481;
     display: inline-block;
-    margin-left: 2px;
-    margin-top: 8px;
+    margin-left: 100px;
+    margin-top: 35px;
 }
 .tag24{
-    font-size: 9px;
+    font-size: 30px;
     display: inline-block;
     float: left;
-    line-height: 13px;
+    line-height: 50px;
+    margin: 70px -30px 0 60px;
 }
 .tag25{
     margin-top: -80px;
@@ -196,7 +198,7 @@ p{
 
 header {
     float: right;
-  padding:10px 6px 10px 10px;
+  padding:20px 60px 100px 100px;
   background:#E65748;
 display: inline-block;
     margin: 0 10px 0 0 ;
@@ -216,23 +218,17 @@ display: inline-block;
 /*アイコンのスペース*/
 #nav-open {
   display: inline-block;
-  width: 30px;
-  height: 22px;
+  width: 1px;
+  height: 0px;
   vertical-align: middle;
 }
 
-/*ハンバーガーアイコンをCSSだけで表現*/
-#nav-open span, #nav-open span:before, #nav-open span:after {
-    margin-top: 30px;
-  position: absolute;
-  height: 3px;/*線の太さ*/
-  width: 25px;/*長さ*/
-  border-radius: 3px;
-  background: #FFFFFF;
-  display: block;
-  content: '';
-  cursor: pointer;
+.tag26{
+    margin: 0 90px 0 -58px;
 }
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+
 #nav-open span:before {
   bottom: -8px;
 }
@@ -262,7 +258,7 @@ display: inline-block;
   left: 0;
   z-index: 9999;/*最前面に*/
   width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 330px;/*最大幅（調整してください）*/
+  max-width: 700px;/*最大幅（調整してください）*/
   height: 100%;
   background: #fff;/*背景色*/
   transition: .3s ease-in-out;/*滑らかに表示*/
@@ -282,3 +278,6 @@ display: inline-block;
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
+.quick{
+    font-size: 80px;
+}
