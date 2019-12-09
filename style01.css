@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+}
+.main{
+    width: 360px;
+    background: #FFFFFF;
+}
+p{
+    font-family:'筑紫A丸ゴシック ボールド';
+    letter-spacing: 0.2em;
+}
+
+
+.tag01{
+    background:#E65748;
+    font-size: 10px;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 10px;
+    margin: 0 0 -10px 0;
+}
+
+
+.tag02{
+    margin-top: 10px;
+}
+
+.tag03{
+    text-align: center;
+}
+.tag04{
+    margin-bottom: -20px;
+}
+.tag05{
+    text-align: center;
+}
+.tag06{
+    margin:-3px;
+}
+.tag07{
+    text-align: center;
+    display: inline-block;
+}
+.tag08{
+    text-align: center;
+    margin-top: -10px;
+}
+.test{
+    background-image: url("image/08.png");
+    background-size: 100%;
+}
+.test01{
+    width: 335px;
+    background: #FEFEFE;
+    padding: 0;
+    margin: 1px auto;
+}
+.tag09{
+    text-align: center;
+}
+
+.tag10{
+    font-size: 13px;
+    text-align: center;
+    color: #EA6481;
+}
+.tag11{
+    font-size: 8px;
+    letter-spacing: 0.05em;
+}
+.tag12{
+    color:#D26DA4; 
+    border-bottom: solid 1.5px #D26DA4;
+    display: inline-block;
+    padding: 0 3px;
+}
+.tag13{
+    margin-top: 5px;
+    text-align: center;
+}
+.tag14{
+    margin: -1px 20px;
+    float: left;
+}
+.tag15{
+    font-size: 15px;
+    text-align: center;
+    color: #EA6481;
+    display: inline-block;
+    margin-left: 2px;
+}
+.tag16{
+    text-align: center;
+}
+.tag17{
+    font-size: 10px;
+    text-align: center;
+}
+#id02{
+    display: none;
+}
+#id01:active{
+    box-shadow: 0px 0px 3px 0.1px;
+    
+}
+
+.tag18{
+    font-size: 15px;
+    text-align: center;
+    color: #EA6481;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+#id04{
+    display: none;
+}
+#id03:active{
+    box-shadow: 0px 0px 3px 0.1px;
+    
+}
+
+#id06{
+    display: none;
+}
+#id05:active{
+    box-shadow: 0px 0px 3px 0.1px;
+    
+}
+.tag20{
+    font-size: 9px;
+    display: inline-block;
+    float: left;
+    margin-top: 80px;
+    margin-right: -8px;
+    line-height: 13px;
+    
+}
+.tag21{
+    margin-left: 25px;
+}
+.tag22{
+    border-bottom: solid 1.5px #FF99A5;
+}
+
+#id08{
+    display: none;
+}
+#id07:active{
+    box-shadow: 0px 0px 3px 0.1px;
+}
+.tag23{
+    font-size: 15px;
+    text-align: center;
+    color: #EA6481;
+    display: inline-block;
+    margin-left: 2px;
+    margin-top: 8px;
+}
+.tag24{
+    font-size: 9px;
+    display: inline-block;
+    float: left;
+    line-height: 13px;
+}
+.tag25{
+    margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    float: right;
+  padding:10px 6px 10px 10px;
+  background:#E65748;
+display: inline-block;
+    margin: 0 10px 0 0 ;
+    border-radius: 10px;
+    height: 50px
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+    margin-top: 30px;
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #FFFFFF;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 100%;
+  background: #fff;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
