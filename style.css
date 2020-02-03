@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +14,20 @@
 
 
 
-.test{
-    width: 360px;
-    height: 100px;
-    background-color: pink;
-}
+@media screen and (min-width: 481px)　{ }
+
+
+@media screen and (max-width: 480px)　{ }
+
+
+
+
+
+
+
+
+
+
+
+
+
