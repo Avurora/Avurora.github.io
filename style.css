@@ -8,16 +8,10 @@
 
 
 
-html{
-    background-color: green;
-}
-body{
-    width: 350px;
-    background-color: #FFF;
-}
+
 
 .test{
-    width: 750px;
+    width: 360px;
     height: 100px;
     background-color: pink;
 }
